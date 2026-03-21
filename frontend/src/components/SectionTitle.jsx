@@ -6,7 +6,7 @@ export default function SectionTitle({ label, title, subtitle }) {
           {label}
         </span>
       )}
-      <h2 className="mt-2 text-3xl font-bold text-gray-100">{title}</h2>
+      <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-gray-100">{title}</h2>
       {subtitle && <p className="mt-3 text-gray-400 max-w-xl">{subtitle}</p>}
     </div>
   )

@@ -18,14 +18,14 @@ export default function AboutPage() {
       <section>
         <SectionTitle label={t.about.label} title={t.about.title} />
 
-        <div className="card p-8" data-aos="fade-up">
-          <div className="flex flex-col sm:flex-row gap-8 items-start">
+        <div className="card p-6 sm:p-8" data-aos="fade-up">
+          <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start">
 
             {/* Left column: image + social links */}
             <div className="flex flex-col items-center gap-4 shrink-0">
-              <div className="w-48 h-64 rounded-xl overflow-hidden ring-2 ring-cyan-400/30 shrink-0">
+              <div className="w-40 h-56 sm:w-48 sm:h-64 rounded-xl overflow-hidden ring-2 ring-cyan-400/30 shrink-0">
                 <img
-                  src={`${import.meta.env.BASE_URL}img/avatar2.jpeg`}
+                  src={`${import.meta.env.BASE_URL}img/avatar2.webp`}
                   alt={about.name}
                   className="w-full h-full object-contain pointer-events-none"
                   style={{ transformOrigin: 'center center', transform: 'scale(2) translate(15px, 37px)' }}
@@ -35,7 +35,7 @@ export default function AboutPage() {
             </div>
 
             {/* Right column: name, title, location, bio */}
-            <div className="space-y-4">
+            <div className="space-y-4 text-center sm:text-left">
               <div className="space-y-1">
                 <h2 className="text-2xl font-bold text-gray-100">{about.name}</h2>
                 <p className="gradient-text font-medium">{about.title}</p>

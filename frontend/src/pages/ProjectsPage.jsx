@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         subtitle={t.projects.subtitle}
       />
 
-      <div className="grid sm:grid-cols-2 gap-5">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project, i) => (
           <div key={project.id} data-aos="fade-up" data-aos-delay={i * 100}>
             <ProjectCard project={project} />

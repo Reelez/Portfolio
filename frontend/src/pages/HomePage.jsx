@@ -17,28 +17,39 @@ export default function HomePage() {
     <div className="max-w-5xl mx-auto px-6">
 
       {/* Hero */}
-      <section className="min-h-[90vh] flex flex-col justify-center py-20">
-        <div className="flex flex-col sm:flex-row items-start justify-between gap-12 animate-fade-in">
+      <section className="min-h-[90vh] flex flex-col justify-center py-24 md:py-20">
+        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8 sm:gap-12 animate-fade-in">
 
           {/* Text */}
-          <div className="space-y-6 flex-1">
+          <div className="space-y-5 flex-1 text-center sm:text-left">
             <span className="font-mono text-sm text-cyan-400">
               {t.hero.greeting}
             </span>
 
-            <h1 className="text-5xl sm:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
               <span className="gradient-text">{about.name}</span>
             </h1>
 
-            <h2 className="text-2xl sm:text-3xl text-gray-400 font-light">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-400 font-light">
               {about.title}
             </h2>
 
-            <p className="text-gray-400 max-w-xl leading-relaxed text-lg">
+            {/* Avatar — mobile only, between title and bio */}
+            {about.avatar && (
+              <div className="sm:hidden -mt-8">
+                <img
+                  src={`${import.meta.env.BASE_URL}img/avatar.webp`}
+                  alt={about.name}
+                  className="w-56 object-contain drop-shadow-2xl mx-auto"
+                />
+              </div>
+            )}
+
+            <p className="text-gray-400 max-w-xl leading-relaxed text-base sm:text-lg mx-auto sm:mx-0">
               {about.bio}
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-4 pt-2 justify-center sm:justify-start">
               <Link to="/projects" className="btn-animated">
                 {t.hero.cta}
               </Link>
@@ -51,13 +62,13 @@ export default function HomePage() {
             )}
           </div>
 
-          {/* Avatar */}
+          {/* Avatar — desktop only */}
           {about.avatar && (
-            <div className="shrink-0 -mt-16">
+            <div className="hidden sm:block shrink-0 sm:-mt-16">
               <img
-                src={`${import.meta.env.BASE_URL}img/avatar.png`}
+                src={`${import.meta.env.BASE_URL}img/avatar.webp`}
                 alt={about.name}
-                className="w-64 sm:w-80 object-contain drop-shadow-2xl"
+                className="w-64 lg:w-80 object-contain drop-shadow-2xl"
               />
             </div>
           )}
@@ -80,7 +91,7 @@ export default function HomePage() {
             subtitle={t.hero.featuredSubtitle}
           />
 
-          <div className="grid sm:grid-cols-2 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {featured.map((project, i) => (
               <div key={project.id} data-aos="fade-up" data-aos-delay={i * 100}>
                 <ProjectCard project={project} />

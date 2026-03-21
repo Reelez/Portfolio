@@ -8,10 +8,10 @@ export const senderoData = {
     "Layered Django REST Framework architecture. HTTP requests flow through urls.py → views.py (thin layer: validates request, delegates to service, returns Response) → services/ (all business logic, queries, and calculations) → models.py (Django ORM → MySQL). Key services: visitor management, trail handling, survey processing, comment/rating system, real-time dashboard stats, and Excel report generation. Authentication uses JWT tokens via djangorestframework-simplejwt.",
 
   images: [
-    `${base}img/projectSendero/Sendero.png`,
-    `${base}img/projectSendero/Inicio.png`,
-    `${base}img/projectSendero/Sign in.png`,
-    `${base}img/projectSendero/Registro de visitantes.png`,
-    `${base}img/projectSendero/Admin Encuestas.png`,
+    `${base}img/projectSendero/Sendero.webp`,
+    `${base}img/projectSendero/Inicio.webp`,
+    `${base}img/projectSendero/Sign in.webp`,
+    `${base}img/projectSendero/Registro de visitantes.webp`,
+    `${base}img/projectSendero/Admin Encuestas.webp`,
   ],
 }

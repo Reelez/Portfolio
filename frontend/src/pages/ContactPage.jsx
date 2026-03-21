@@ -16,7 +16,7 @@ export default function ContactPage() {
         subtitle={t.contact.subtitle}
       />
 
-      <div className="grid sm:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10">
 
         {/* Left — info */}
         <div className="space-y-6">

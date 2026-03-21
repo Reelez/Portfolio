@@ -8,10 +8,10 @@ export const senderoDataEs = {
     "Arquitectura en capas con Django REST Framework. Las solicitudes HTTP fluyen a través de urls.py → views.py (capa delgada: valida la solicitud, delega al servicio, retorna Response) → services/ (toda la lógica de negocio, consultas y cálculos) → models.py (Django ORM → MySQL). Servicios clave: gestión de visitantes, manejo de senderos, procesamiento de encuestas, sistema de comentarios y calificaciones, estadísticas del dashboard en tiempo real y generación de reportes Excel. La autenticación utiliza tokens JWT mediante djangorestframework-simplejwt.",
 
   images: [
-    `${base}img/projectSendero/Sendero.png`,
-    `${base}img/projectSendero/Inicio.png`,
-    `${base}img/projectSendero/Sign in.png`,
-    `${base}img/projectSendero/Registro de visitantes.png`,
-    `${base}img/projectSendero/Admin Encuestas.png`,
+    `${base}img/projectSendero/Sendero.webp`,
+    `${base}img/projectSendero/Inicio.webp`,
+    `${base}img/projectSendero/Sign in.webp`,
+    `${base}img/projectSendero/Registro de visitantes.webp`,
+    `${base}img/projectSendero/Admin Encuestas.webp`,
   ],
 }
