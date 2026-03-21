@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Sistema Sendero – Parque Nacional",
+    "description": "Sistema backend para el Parque Nacional Camino de Cruces de Panamá. Gestiona el registro de visitantes con PII cifrada, administración de senderos, encuestas post-visita, comentarios con calificaciones y generación de reportes en Excel para el personal del parque.",
+    "tech_stack": ["Python", "Django", "MySQL", "JWT", "REST API"],
+    "github_url": null,
+    "live_url": null,
+    "featured": true,
+    "image": "./img/projectSendero/Sendero.png"
+  },
+  {
+    "id": 2,
+    "title": "AmberAlert",
+    "description": "Próximamente.",
+    "tech_stack": [],
+    "github_url": null,
+    "live_url": null,
+    "featured": true,
+    "image": null
+  },
+  {
+    "id": 3,
+    "title": "NovaMind – EmotionHUB",
+    "description": "Sistema de análisis de clima organizacional impulsado por IA que detecta emociones, niveles de estrés y bloqueos organizacionales en empleados mediante transformers de NLP y un agente conversacional autónomo.",
+    "tech_stack": ["Python", "FastAPI", "Streamlit", "HuggingFace", "MySQL"],
+    "github_url": "https://github.com/Annie50P/Proyecto-IA-Novamind",
+    "live_url": null,
+    "featured": true,
+    "image": "./img/projectNovaMind/stats 1.png"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "company": "Prival Bank",
+    "position": "Pasante de Ingeniería Full Stack",
+    "location": "Panamá, Panamá",
+    "description": "Contribuí al desarrollo e implementación de un sistema bancario central interno, reemplazando una plataforma legada de terceros con una arquitectura moderna, segura y escalable alineada con la estrategia de transformación digital del banco. Logré una reducción del 80% en el procesamiento manual de transacciones mediante flujos financieros automatizados en un entorno bancario de alto volumen. Diseñé una arquitectura orientada al dominio y enfocada en seguridad que redujo las vulnerabilidades identificadas en un 90%.",
+    "highlights": [
+      "Reducción del 80% en el procesamiento manual de transacciones mediante flujos financieros automatizados",
+      "Disminución del 90% en vulnerabilidades identificadas mediante arquitectura orientada al dominio",
+      "Reemplazo de plataforma bancaria legada por un sistema moderno y escalable"
+    ],
+    "technologies": ["Full Stack", "Banca Central", "Arquitectura de Seguridad", "Flujos Financieros"],
+    "start_date": "2025-10",
+    "end_date": "2026-05",
+    "current": false
+  },
+  {
+    "id": 2,
+    "company": "Ventures LLC",
+    "position": "Líder de Tecnología y Transformación Digital",
+    "location": "Estados Unidos, Carolina del Norte",
+    "description": "Implementé soporte integral de dispositivos empresariales y gestioné la logística de despliegue de equipos y soluciones tecnológicas adaptadas a las necesidades operativas, logrando una mejora del 50% en eficiencia operacional. Lideré soporte técnico e implementación de hardware, mientras desarrollé y mantuve plataformas web internas y externas alineadas con los objetivos organizacionales.",
+    "highlights": [
+      "Mejora del 50% en eficiencia operacional mediante el despliegue de dispositivos empresariales",
+      "Gestión de logística para equipos tecnológicos adaptados a necesidades operativas",
+      "Desarrollo y mantenimiento de plataformas web internas y externas"
+    ],
+    "technologies": ["Desarrollo Web", "Soporte TI", "Implementación de Hardware", "Transformación Digital"],
+    "start_date": "2021-07",
+    "end_date": "2022-07",
+    "current": false
+  }
+]

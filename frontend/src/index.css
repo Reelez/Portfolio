@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Hobby flip cards */
+.hobby-flip-card {
+  width: 100%;
+  height: 254px;
+}
+
+.hobby-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.hobby-flip-card:hover .hobby-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.hobby-flip-front,
+.hobby-flip-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.hobby-flip-back {
+  transform: rotateY(180deg);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-gray-950 text-gray-100 font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-cyan-400/20 text-cyan-400;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded-full;
+  }
+}
+
+@layer components {
+  .btn-animated {
+    --btn-color: #22d3ee;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid var(--btn-color);
+    transition: color 0.5s;
+    z-index: 1;
+    font-size: 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--btn-color);
+    background: transparent;
+    padding: 0.6em 1.5em;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  .btn-animated::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--btn-color);
+    height: 200px;
+    width: 220px;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: all 0.7s;
+  }
+  .btn-animated:hover {
+    color: #030712;
+  }
+  .btn-animated:hover::before {
+    top: -60px;
+    left: -30px;
+  }
+  .btn-animated:active::before {
+    background: #06b6d4;
+    transition: background 0s;
+  }
+
+  /* Wide / full-width variant */
+  .btn-animated-full {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .btn-animated-full::before {
+    height: 400px;
+    width: 600px;
+    top: 100%;
+    left: 100%;
+  }
+  .btn-animated-full:hover::before {
+    top: -150px;
+    left: -100px;
+  }
+  .btn-animated.btn-purple {
+    --btn-color: #a855f7;
+  }
+  .btn-animated.btn-purple:hover {
+    color: #fff;
+  }
+  .btn-animated.btn-purple:active::before {
+    background: #7c3aed;
+  }
+
+  /* Social icons — border line animation */
+  .social-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .social-list li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #9ca3af;
+    transition: color 0.5s;
+  }
+  .social-list li a span {
+    position: absolute;
+    transition: transform 0.5s;
+  }
+  .social-list li a span:nth-child(1),
+  .social-list li a span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background: #9ca3af;
+    transition: background 0.5s, transform 0.5s;
+  }
+  .social-list li a span:nth-child(1) {
+    top: 0; left: 0;
+    transform-origin: right;
+  }
+  .social-list li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  .social-list li a span:nth-child(3) {
+    bottom: 0; left: 0;
+    transform-origin: left;
+  }
+  .social-list li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  .social-list li a span:nth-child(2),
+  .social-list li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    background: #9ca3af;
+    transition: background 0.5s, transform 0.5s;
+  }
+  .social-list li a span:nth-child(2) {
+    top: 0; left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+  .social-list li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+  }
+  .social-list li a span:nth-child(4) {
+    top: 0; right: 0;
+    transform: scale(0);
+    transform-origin: top;
+  }
+  .social-list li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+  }
+  .social-list li a.social-linkedin:hover       { color: #0274b3; }
+  .social-list li a.social-linkedin:hover span  { background: #0274b3; }
+  .social-list li a.social-github:hover         { color: #e5e7eb; }
+  .social-list li a.social-github:hover span    { background: #e5e7eb; }
+  .social-list li a.social-email:hover          { color: #ea4335; }
+  .social-list li a.social-email:hover span     { background: #ea4335; }
+}
+
+/* 3D rotating carousel */
+@keyframes autoRun3d {
+  from { transform: perspective(800px) rotateY(-360deg); }
+  to   { transform: perspective(800px) rotateY(0deg); }
+}
+@keyframes animateBrightness {
+  10% { filter: brightness(1); }
+  50% { filter: brightness(0.12); }
+  90% { filter: brightness(1); }
+}
+.card-3d {
+  position: relative;
+  width: 700px;
+  height: 580px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun3d 20s linear infinite;
+  will-change: transform;
+}
+.card-3d div {
+  position: absolute;
+  width: 200px;
+  height: 432px;
+  background-color: #111827;
+  border: 2px solid #374151;
+  border-radius: 0.5rem;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  animation: animateBrightness 20s linear infinite;
+  transition-duration: 200ms;
+  will-change: transform, filter;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-3d:hover {
+  animation-play-state: paused !important;
+}
+.card-3d:hover div {
+  animation-play-state: paused !important;
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent;
+  }
+  .card {
+    @apply bg-gray-900 border border-gray-800 rounded-xl;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/5;
+  }
+  .section {
+    @apply py-20 px-6 max-w-5xl mx-auto;
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Música",
+    "description": "Toco el ukulele y exploro distintos géneros musicales en mi tiempo libre.",
+    "icon": "🎸",
+    "image": "img/hobbies/music.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Senderismo",
+    "description": "Explorar la naturaleza y senderos para desconectarme y recargar energías.",
+    "icon": "🏔️",
+    "image": "img/hobbies/hiking.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Deportes",
+    "description": "Disfruto practicar distintos deportes, siendo el voleibol mi favorito actualmente.",
+    "icon": "🏐",
+    "image": "img/hobbies/sports.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Videojuegos",
+    "description": "Gran fanático de los juegos narrativos, especialmente The Legend of Zelda.",
+    "icon": "🎮",
+    "image": "img/hobbies/videogames.jpg"
+  }
+]

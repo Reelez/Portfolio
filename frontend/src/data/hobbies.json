@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Music",
+    "description": "Playing the ukulele and exploring different music genres in my free time.",
+    "icon": "🎸",
+    "image": "img/hobbies/music.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Hiking",
+    "description": "Exploring nature and hiking trails to disconnect and recharge.",
+    "icon": "🏔️",
+    "image": "img/hobbies/hiking.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sports",
+    "description": "I enjoy playing different sports, with volleyball being my current favorite.",
+    "icon": "🏐",
+    "image": "img/hobbies/sports.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Video Games",
+    "description": "A big fan of story-driven games, especially The Legend of Zelda.",
+    "icon": "🎮",
+    "image": "img/hobbies/videogames.jpg"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "company": "Prival Bank",
+    "position": "Full Stack Engineering Intern",
+    "location": "Panama, Panama",
+    "description": "Contributed to the development and deployment of an internal core banking system, replacing a legacy third-party platform with a modern, secure, and scalable architecture aligned with the bank's digital transformation strategy. Drove an 80% reduction in manual transaction processing by designing and implementing automated financial workflows within a high-volume banking environment. Engineered a domain-driven, security-focused system architecture that decreased identified vulnerabilities by 90%, significantly improving resilience against potential threats.",
+    "highlights": [
+      "80% reduction in manual transaction processing through automated financial workflows",
+      "90% decrease in identified vulnerabilities via domain-driven, security-focused architecture",
+      "Replaced legacy third-party core banking platform with a modern scalable system"
+    ],
+    "technologies": ["Full Stack", "Core Banking", "Security Architecture", "Financial Workflows"],
+    "start_date": "2025-10",
+    "end_date": "2026-05",
+    "current": false
+  },
+  {
+    "id": 2,
+    "company": "Ventures LLC",
+    "position": "Technology and Digital Transformation Lead",
+    "location": "United States, North Carolina",
+    "description": "Implemented comprehensive enterprise device support and managed logistics for the deployment of technological equipment and solutions tailored to operational needs, resulting in a 50% improvement in operational efficiency and overall company performance. Led technical support and hardware implementation efforts, while developing and maintaining internal and external web platforms aligned with organizational objectives.",
+    "highlights": [
+      "50% improvement in operational efficiency through enterprise device deployment",
+      "Managed logistics for technological equipment tailored to operational needs",
+      "Developed and maintained internal and external web platforms"
+    ],
+    "technologies": ["Web Development", "IT Support", "Hardware Implementation", "Digital Transformation"],
+    "start_date": "2021-07",
+    "end_date": "2022-07",
+    "current": false
+  }
+]
