@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing projects, work experience, and professional profile.
 
-> Live: *(link available after Render deploy)*
+> Live: https://portfolioomar.onrender.com/
 
 ---
 
